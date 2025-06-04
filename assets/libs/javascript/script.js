@@ -131,7 +131,7 @@ function show_about() {
     <div class="about-box">
       <p>
         - Skidder<br>
-	- Coder(C#, C++, Python)<br>
+	- Programmer (C#, C++, Python)<br>
 	- Been in game development & game reverse engineering for 3 years<br>
 	- Discord: ismokefigbars, felonssextape, 6starsx., kittenkatana2016<br>
 	- Github: ieatroachss<br>
