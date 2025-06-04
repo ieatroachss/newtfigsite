@@ -8,6 +8,27 @@
 <head>
 <title>ismokefigbars</title>
 <link rel="stylesheet" href="assets/libs/css/main.css">
+<style>
+  .star {
+    position: fixed;
+    pointer-events: none;
+    width: 6px;
+    height: 6px;
+    background: white;
+    clip-path: polygon(
+      50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 
+      50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%
+    );
+    opacity: 1;
+    animation: fade 1s forwards;
+  }
+  @keyframes fade {
+    to {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+  }
+</style>
 </head>
 <body>
   <div class="container">
@@ -26,6 +47,18 @@
 
   <div class="review-popup" id="review-popup">wrddddd</div>
   <canvas id="particles"></canvas>
+<script>
+  document.addEventListener('mousemove', (e) => {
+    const star = document.createElement('div');
+    star.classList.add('star');
+    star.style.left = e.clientX + 'px';
+    star.style.top = e.clientY + 'px';
+    document.body.appendChild(star);
+    star.addEventListener('animationend', () => {
+    star.remove();
+    });
+  });
+</script>
 <script src="assets/libs/javascript/script.js" defer></script>
 </body>
 </html>
