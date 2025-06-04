@@ -8,6 +8,7 @@
 <head>
 <title>ismokefigbars</title>
 <link rel="stylesheet" href="assets/libs/css/main.css">
+<link rel="stylesheet" href="assets/libs/css/krabsnoti.css">
 <style>
   .star {
     position: fixed;
@@ -31,20 +32,24 @@
 </style>
 </head>
 <body>
+
+  <div class="notification" id="krabsnoti">
+    <img src="assets/images/mrkrabs.png" alt="krabs" class="krabs-img" />
+    <div class="speech-bubble">
+	Did you know! that clicking this page starts music?
+    </div>
+  </div>
   <div class="container">
     <div class="tab-buttons">
       <button onclick="show_home()">Home</button>
       <button onclick="show_about()">About Me</button>
       <button onclick="location.href='projects.html'">Projects</button>
     </div>
-
     <div id="content-area"></div>
   </div>
-
   <a href="clown.html" class="clown-peek">
     <img src="assets/images/clown.png" alt="clown">
   </a>
-
   <div class="review-popup" id="review-popup">wrddddd</div>
   <canvas id="particles"></canvas>
 <script>
@@ -60,5 +65,6 @@
   });
 </script>
 <script src="assets/libs/javascript/script.js" defer></script>
+<script src="assets/libs/javascript/krabs.js" defer></script>
 </body>
 </html>
