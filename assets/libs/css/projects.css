@@ -1,0 +1,105 @@
+    body {
+      margin: 0;
+      background: black;
+      color: white;
+      font-family: sans-serif;
+      overflow: hidden;
+    }
+
+    #particles {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 80px;
+      z-index: 1;
+      position: relative;
+    }
+
+    .boxes {
+      display: flex;
+      gap: 30px;
+      padding: 40px 20px;
+      justify-content: center;
+      flex-wrap: nowrap;
+      width: 100%;
+      box-sizing: border-box;
+      z-index: 1;
+      position: relative;
+    }
+
+    .box {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      width: 200px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+      flex-shrink: 0;
+    }
+
+@keyframes effectmovemnt {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+
+    .box img {
+      width: 200px;
+      height: 120px;
+      object-fit: cover;
+      margin-bottom: 15px;
+      background: #555;
+    }
+
+    .box .name {
+  font-size: 24px;
+  font-weight: bold;
+  background: linear-gradient(270deg, #ff6ec4, #42a5f5, #7f00ff, #00ffe7);
+  background-size: 800% 800%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: effectmovemnt 30s ease infinite;
+    }
+
+    .box .desc {
+      font-size: 16px;
+      line-height: 1.3;
+      color: #ccc;
+    }
+
+    audio {
+      display: none;
+    }
+
+    .bbutton {
+      background-color: #fff;
+      color: black;
+      padding: 8px 12px;
+      border: none;
+      border-radius: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      margin-top: 15px;
+      display: inline-block; 
+    }
+    .bbutton:hover {
+    background-color: #ddd;
+    }
