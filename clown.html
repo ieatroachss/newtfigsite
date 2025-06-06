@@ -1,26 +1,6 @@
 <head>
 <title>* clowns *</title>
 <link rel="stylesheet" href="assets/libs/css/clowns.css">
-<style>
-    .clown {
-      position: fixed;
-      font-size: 20px;
-      pointer-events: none;
-      animation: drop 1.5s ease-out forwards;
-    }
-
-    @keyframes drop {
-      0% {
-        opacity: 1;
-        transform: translateY(0) scale(1);
-      }
-      100% {
-        opacity: 0;
-        transform: translateY(80px) scale(0.6) rotate(360deg);
-      }
-    }
-  
-</style>
 </head>
 <body>
   <canvas id="particles"></canvas>
@@ -58,21 +38,6 @@
 
     </div>
   </div>
-  <b>No hate to anyone of course :3</b>
-<script>
-  document.addEventListener('mousemove', (e) => {
-    const clown = document.createElement('div');
-    clown.classList.add('clown');
-    clown.textContent = '🤡';
-    clown.style.left = `${e.clientX}px`;
-    clown.style.top = `${e.clientY}px`;
-    document.body.appendChild(clown);
-
-    clown.addEventListener('animationend', () => {
-    clown.remove();
-    });
-  });
-</script>  
 <script src="assets/libs/javascript/clowns.js" defer></script>
 </body>
 </html>
