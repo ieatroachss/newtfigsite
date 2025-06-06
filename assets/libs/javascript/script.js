@@ -133,7 +133,7 @@ function show_about() {
         - Programmer (C#, C++, Python)<br>
         - Been in game development & game reverse engineering for 3 years.<br>
         - Discord: ismokefigbars, felonssextape, 6starsx., kittenkatana2016<br>
-        - Github: ieatroachss<br>
+        - Github: ieatroachss<br><br>
         The losers I've came across: <a href="clown.html"><b>Clowns</b></a>
       </p>
     </div>
