@@ -134,9 +134,9 @@ audio {
 }
 
 .coderings {
-  margin-top: 10px;
   display: flex;
   gap: 10px;
+  margin-top: 5px;
 }
 
 .coderings img {
@@ -149,4 +149,5 @@ audio {
 .coderings img:hover {
   transform: scale(1.1);
 }
+
 
