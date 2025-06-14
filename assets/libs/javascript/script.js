@@ -135,11 +135,6 @@ function show_about() {
         - Discord: ismokefigbars, felonssextape, 6starsx., kittenkatana2016<br>
         - Github: ieatroachss<br><br>
       </p>
-      <div class="coderings">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#" />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="PY" />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JS" />
-      </div>
     </div>
   `;
 }
