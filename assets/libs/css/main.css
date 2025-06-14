@@ -132,3 +132,21 @@ body {
 audio {
   display: none;
 }
+
+.coderings {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.coderings img {
+  width: 32px;
+  height: 32px;
+  filter: drop-shadow(0 0 4px white);
+  transition: transform 0.2s ease;
+}
+
+.coderings img:hover {
+  transform: scale(1.1);
+}
+
