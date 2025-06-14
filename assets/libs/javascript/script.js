@@ -135,10 +135,10 @@ function show_about() {
   content_area.innerHTML = `
     <div class="about-box">
       <p>
-        - Studying SQL, Python, C#<br>
-        - Been in game development & game reverse engineering for 3 years.<br>
+        - Studying SQL, Python, and C#<br>
+        - I'm not going to mod or make any tool for modding anymore.<br>
         - Discord: ismokefigbars, felonssextape, 6starsx., kittenkatana2016<br>
-        - Github: ieatroachss<br><br>
+        - Github: ieatroachss
       </p>
     </div>
   `;
