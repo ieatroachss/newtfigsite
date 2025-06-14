@@ -122,6 +122,11 @@ function show_home() {
     <div class="profile-section">
       <div class="profile-pic" style="background-image: url('assets/images/newtfigpic.gif');"></div>
       <div class="tagline">Ismokefigbars</div>
+      <div class="coderings">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="PY" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JS" />
+      </div>
     </div>
   `;
 }
