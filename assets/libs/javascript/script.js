@@ -134,18 +134,19 @@ function show_home() {
 function show_about() {
   content_area.innerHTML = `
     <div class="about-box">
+      <p style="text-align:center;">* Bio *</p>
       <p>
-	* Bio *<br> 
         - I'm a 14yr old programmer.<br>
         - I make cheats, modding tools, and other side projects for whatever.<br>
-        - Currently learning SQL, Python, and C#.<br>
-	* Socials *<br>
+        - Currently learning SQL, Python, and C#.<br><br>
+      </p>
+      <p style="text-align:center;">* Socials *</p>
+      <p>
         - Discord: ismokefigbars, felonssextape, 6starsx., kittenkatana2016<br>
         - Github: ieatroachss
       </p>
     </div>
   `;
 }
-
 
 show_home();
