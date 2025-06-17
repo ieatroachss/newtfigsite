@@ -1,44 +1,52 @@
 <head>
-<title>* projects *</title>
-<meta property="og:title" content="* Projects *">
-<meta property="og:description" content="Ismokefigbars's Projects">
-<link rel="stylesheet" href="assets/libs/css/projects.css">
-<link rel="stylesheet" href="assets/libs/css/krabsnoti.css">
+  <title>* projects *</title>
+  <meta property="og:title" content="* Projects *">
+  <meta property="og:description" content="Ismokefigbars's Projects">
+  <link rel="stylesheet" href="assets/libs/css/projects.css">
+  <link rel="stylesheet" href="assets/libs/css/krabsnoti.css">
+  <style>
+    .disclaimer {
+      position: fixed;
+      right: 10px;
+      bottom: 10px;
+      background: rgba(0, 0, 0, 0.5);
+      color: white;
+      padding: 5px 10px;
+      border-radius: 4px;
+      font-size: 14px;
+      font-family: 'Courier New', monospace;
+      z-index: 1000;
+    }
+  </style>
 </head>
 <body>
   <canvas id="particles"></canvas>
-  
   <div class="notification" id="krabsnoti">
-    
-  	<img src="assets/images/mrkrabs.png" alt="krabs" class="krabs-img" />
-    
-  	<div class="speech-bubble">
-  		I'm a active fentanyl user
-  	</div>
-    
+    <img src="assets/images/mrkrabs.png" alt="krabs" class="krabs-img" />
+    <div class="speech-bubble"> I'm a active fentanyl user </div>
   </div>
-  
   <div class="container">
-    
     <div class="boxes">
-
       <div class="box">
         <img src="assets/images/projects/Jayoma.png" alt="Image" />
         <div class="name">Jayoma UI</div>
-        <div class="desc">- Universal Roblox UI<br>- <b>Basic(ASS)</b><br>Not my lib!</div>
+        <div class="desc">- Universal Roblox UI <br>- <b>Basic(ASS)</b>
+          <br>Not my lib!
+        </div>
         <a class="bbutton" onclick="copy(this, `loadstring(game:HttpGet('https://raw.githubusercontent.com/ieatroachss/JayomaUI/refs/heads/main/Jayoma.lua'))()`); return false;">Copy Script</a>
       </div>
-
       <div class="box">
         <img src="assets/images/projects/UBD.png" alt="Image" />
         <div class="name">Unity Backend Detector</div>
-        <div class="desc">- Detects the scripting backend for unity games.<br>- <b>Basic</b><br>That's all</div>
+        <div class="desc">- Detects the scripting backend for unity games. <br>- <b>Basic</b>
+          <br>That's all
+        </div>
         <a class="bbutton" href="https://github.com/ieatroachss/UnityBackendDetector">Github Link</a>
       </div>
     </div>
-    
   </div>
-<script src="assets/libs/javascript/projects.js" defer></script>
-<script src="assets/libs/javascript/krabs.js" defer></script>
+  <div class="disclaimer">Expect these to be bad I'm still learning <br>So don't say some bullshit about how ass it is and shouldn't have been released. </div>
+  <script src="assets/libs/javascript/projects.js" defer></script>
+  <script src="assets/libs/javascript/krabs.js" defer></script>
 </body>
 </html>
