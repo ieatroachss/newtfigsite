@@ -4,118 +4,119 @@
 | |<_-<| ' ' |/ . \| / // ._>| |- | |/ . || . \<_> || '_><_-<
 |_|/__/|_|_|_|\___/|_\_\\___.|_|  |_|\_. ||___/<___||_|  /__/
                                      <___'                    
+Code Beautified By codebeautify.org
 -->
 <head>
-<title>ismokefigbars</title>
-<meta property="og:title" content="* ismokefigbars *">
-<meta property="og:description" content="Newtfig's website for my bio and projects.">
-<link rel="stylesheet" href="assets/libs/css/main.css">
-<link rel="stylesheet" href="assets/libs/css/krabsnoti.css">
-<style>
-  body {
-    cursor: none;
-  }
+  <title>ismokefigbars</title>
+  <meta property="og:title" content="* ismokefigbars *">
+  <meta property="og:description" content="Newtfig's website for my bio and projects.">
+  <link rel="stylesheet" href="assets/libs/css/main.css">
+  <link rel="stylesheet" href="assets/libs/css/krabsnoti.css">
+  <style>
+    body {
+      cursor: none;
+    }
 
-  .star {
-    position: fixed;
-    pointer-events: none;
-    width: 6px;
-    height: 6px;
-    background: white;
-    clip-path: polygon(
-      50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 
-      50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%
-    );
-    opacity: 1;
-    animation: fade 1s forwards;
-  }
+    .star {
+      position: fixed;
+      pointer-events: none;
+      width: 6px;
+      height: 6px;
+      background: white;
+      clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%,
+          50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+      opacity: 1;
+      animation: fade 1s forwards;
+    }
 
-  @keyframes fade {
-    to {
+    @keyframes fade {
+      to {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+    }
+
+    #page-content.blur {
+      filter: blur(8px);
+      transition: filter 1s ease;
+    }
+
+    #overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.75);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      z-index: 9999;
+      cursor: pointer;
+      transition: opacity 1s ease;
+      text-align: center;
+    }
+
+    #overlay.hidden {
       opacity: 0;
-      transform: translateY(20px);
+      pointer-events: none;
     }
-  }
 
-  #page-content.blur {
-    filter: blur(8px);
-    transition: filter 1s ease;
-  }
-
-  #overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.75);
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 2rem;
-    z-index: 9999;
-    cursor: pointer;
-    transition: opacity 1s ease;
-    text-align: center;
-  }
-
-  #overlay.hidden {
-    opacity: 0;
-    pointer-events: none;
-  }
-
-  .extraglow {
-    font-size: 2rem;
-    text-shadow: 0 0 10px #fff;
-    margin: 10px 0;
-  }
-
-  .start-text {
-    font-size: 2rem;
-    text-shadow: 0 0 10px #fff;
-    animation: animation 2s linear infinite;
-    display: inline-block;
-    transform-style: preserve-3d;
-    margin-bottom: 20px;
-  }
-
-  @keyframes animation {
-    0% {
-      transform: rotateY(0deg);
+    .extraglow {
+      font-size: 2rem;
+      text-shadow: 0 0 10px #fff;
+      margin: 10px 0;
     }
-    100% {
-      transform: rotateY(360deg);
+
+    .start-text {
+      font-size: 2rem;
+      text-shadow: 0 0 10px #fff;
+      animation: animation 2s linear infinite;
+      display: inline-block;
+      transform-style: preserve-3d;
+      margin-bottom: 20px;
     }
-  }
 
-  .cursor, .cursor-out-cir {
-    position: fixed;
-    pointer-events: none;
-    z-index: 9999;
-    border-radius: 50%;
-    transition: transform 0.1s ease;
-  }
+    @keyframes animation {
+      0% {
+        transform: rotateY(0deg);
+      }
 
-  .cursor {
-    top: 0;
-    left: 0;
-    width: 12px;
-    height: 12px;
-    background-color: black;
-    border: 2px solid white;
-    box-shadow: 0 0 6px 2px rgba(255, 255, 255, 0.5);
-    transform: translate(-50%, -50%);
-  }
+      100% {
+        transform: rotateY(360deg);
+      }
+    }
 
-  .cursor-out-cir {
-    width: 30px;
-    height: 30px;
-    border: 2px solid white;
-    transform: translate(-50%, -50%);
-  }
-</style>
+    .cursor,
+    .cursor-out-cir {
+      position: fixed;
+      pointer-events: none;
+      z-index: 9999;
+      border-radius: 50%;
+      transition: transform 0.1s ease;
+    }
+
+    .cursor {
+      top: 0;
+      left: 0;
+      width: 12px;
+      height: 12px;
+      background-color: black;
+      border: 2px solid white;
+      box-shadow: 0 0 6px 2px rgba(255, 255, 255, 0.5);
+      transform: translate(-50%, -50%);
+    }
+
+    .cursor-out-cir {
+      width: 30px;
+      height: 30px;
+      border: 2px solid white;
+      transform: translate(-50%, -50%);
+    }
+  </style>
 </head>
 <body>
   <div id="overlay">
@@ -125,72 +126,66 @@
   <div class="cursor"></div>
   <div class="cursor-out-cir"></div>
   <div id="page-content">
-  <div class="container">
-    <div class="tab-buttons">
-      <button onclick="show_home()">Home</button>
-      <button onclick="show_about()">About Me</button>
-      <button onclick="location.href='clown.html'">Clowns</button>
-      <button onclick="location.href='projects.html'">Projects</button>
+    <div class="container">
+      <div class="tab-buttons">
+        <button onclick="show_home()">Home</button>
+        <button onclick="show_about()">About Me</button>
+        <button onclick="location.href='clown.html'">Clowns</button>
+        <button onclick="location.href='projects.html'">Projects</button>
+      </div>
+      <div id="content-area"></div>
     </div>
-    <div id="content-area"></div>
+    <div class="review-popup" id="review-popup">wrddddd</div>
+    <canvas id="particles"></canvas>
   </div>
-  <div class="review-popup" id="review-popup">wrddddd</div>
-  <canvas id="particles"></canvas>
-  </div>
-<script>
-  document.addEventListener('mousemove', (e) => {
-    const star = document.createElement('div');
-    star.classList.add('star');
-    star.style.left = e.clientX + 'px';
-    star.style.top = e.clientY + 'px';
-    document.body.appendChild(star);
-    star.addEventListener('animationend', () => {
-    star.remove();
+  <script>
+    document.addEventListener('mousemove', (e) => {
+      const star = document.createElement('div');
+      star.classList.add('star');
+      star.style.left = e.clientX + 'px';
+      star.style.top = e.clientY + 'px';
+      document.body.appendChild(star);
+      star.addEventListener('animationend', () => {
+        star.remove();
+      });
     });
-  });
-</script>
-<script src="assets/libs/javascript/script.js" defer></script>
-<script src="assets/libs/javascript/krabs.js" defer></script>
-<script>
-  window.addEventListener('load', () => {
-    const page = document.getElementById('page-content');
-    const overlay = document.getElementById('overlay');
-    page.classList.add('blur');
-
-    overlay.addEventListener('click', () => {
-      overlay.classList.add('hidden');
-      page.classList.remove('blur');
-      setTimeout(() => overlay.remove(), 1000);
+  </script>
+  <script src="assets/libs/javascript/script.js" defer></script>
+  <script src="assets/libs/javascript/krabs.js" defer></script>
+  <script>
+    window.addEventListener('load', () => {
+      const page = document.getElementById('page-content');
+      const overlay = document.getElementById('overlay');
+      page.classList.add('blur');
+      overlay.addEventListener('click', () => {
+        overlay.classList.add('hidden');
+        page.classList.remove('blur');
+        setTimeout(() => overlay.remove(), 1000);
+      });
     });
-  });
-</script>
+  </script>
+  <script>
+    const cursor = document.querySelector('.cursor');
+    const trail = document.querySelector('.cursor-out-cir');
+    let mousx = 0,
+      mousy = 0;
+    let outx = 0,
+      outy = 0;
+    document.addEventListener('mousemove', (e) => {
+      mousx = e.clientX;
+      mousy = e.clientY;
+      cursor.style.left = `${mousx}px`;
+      cursor.style.top = `${mousy}px`;
+    });
 
-<script>
-  const cursor = document.querySelector('.cursor');
-  const trail = document.querySelector('.cursor-out-cir');
-
-  let mousx = 0, mousy = 0;
-  let outx = 0, outy = 0;
-
-  document.addEventListener('mousemove', (e) => {
-    mousx = e.clientX;
-    mousy = e.clientY;
-
-    cursor.style.left = `${mousx}px`;
-    cursor.style.top = `${mousy}px`;
-  });
-
-  function folow() {
-    outx += (mousx - outx) * 0.1;
-    outy += (mousy - outy) * 0.1;
-
-    trail.style.left = `${outx}px`;
-    trail.style.top = `${outy}px`;
-
-    requestAnimationFrame(folow);
-  }
-
-  folow();
-</script>
+    function folow() {
+      outx += (mousx - outx) * 0.1;
+      outy += (mousy - outy) * 0.1;
+      trail.style.left = `${outx}px`;
+      trail.style.top = `${outy}px`;
+      requestAnimationFrame(folow);
+    }
+    folow();
+  </script>
 </body>
 </html>
